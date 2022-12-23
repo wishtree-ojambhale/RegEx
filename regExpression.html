@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./regExpression.css" />
+  </head>
+  <body>
+    
+    <form>
+      <h2 id="title">Registration</h2>
+
+      <label>Username</label>
+      <input type="text" value="" placeholder="Enter Username" id="uname" />
+      <span id="usernameError" style="color: crimson; visibility: hidden;">
+        Username should not contain special characters
+      </span>
+
+      <label>Email</label>
+      <input type="email" value="" placeholder="xyz@gmail.com" id="email" />
+      <span id="emailError" style="color: crimson; visibility: hidden;">
+        Invalid Email Id
+      </span>
+
+      <label>Password</label>
+      <input type="password" value="" placeholder="Enter Password" id="pwd" />
+      <span id="pwdError" style="color: crimson; visibility: hidden;">
+        Password should contain 1 uppercase, 1 lowercase, 1 special character
+        and atleast 1 number
+      </span>
+
+      <label>Mobile</label>
+      <input
+        type="number"
+        value=""
+        placeholder="Enter Mobile No"
+        id="mobile"
+        maxlength="10"
+      />
+      <span id="mobError" style="color: crimson; visibility: hidden;">
+        Incorrect mobile number
+      </span>
+
+      <button id="submitBtn" type="button" onclick="submitHandler()">
+        Submit
+      </button>
+      <span id="error" style="color: crimson; margin-top: 10px; font-size: 1.3rem; visibility: hidden;">Please fill required fields</span>
+    </form>
+    <script src="./RegExpression.js" type="text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
