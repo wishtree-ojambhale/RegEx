@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./regExpression.css" />
   </head>
   <body>
-    
     <form>
       <h2 id="title">Registration</h2>
-
+      <br />
       <label>Username</label>
       <input type="text" value="" placeholder="Enter Username" id="uname" />
       <span id="usernameError" style="color: crimson; visibility: hidden;">
@@ -46,7 +45,17 @@
       <button id="submitBtn" type="button" onclick="submitHandler()">
         Submit
       </button>
-      <span id="error" style="color: crimson; margin-top: 10px; font-size: 1.3rem; visibility: hidden;">Please fill required fields</span>
+      <span
+        id="error"
+        style="
+          color: crimson;
+          margin-top: 10px;
+          font-size: 1.3rem;
+          visibility: hidden;
+        "
+      >
+        Please fill required fields
+      </span>
     </form>
     <script src="./RegExpression.js" type="text/javascript"></script>
     <script
