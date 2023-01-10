@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validation Jquery Form</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="dark-inspires-body">
+
+
+  <nav>
+    <div class="navbar">
+      <div id="nav-contents">
+        <ul>
+          <li href="./example.html">Home</li>
+          <li>Contacts</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+
+      <div id="nav-img">
+        <img src="./images/iron-man.gif" alt="logo" />
+      </div>
+    </div>
+  </nav>
+
+
+  <form class="form">
+    <h2 id="title">User Registration</h2>
+    <br />
+
+    <label>Username</label>
+    <input type="text" value="" placeholder="Enter Username" id="uname" />
+    <span id="uError"></span>
+
+    <label>Email</label>
+    <input type="email" value="" placeholder="xyz@gmail.com" id="email" />
+    <span id="emError"></span>
+
+    <label>Password</label>
+    <input type="text" value="" placeholder="Enter Password" id="pwd" />
+    <span id="pwdError"></span>
+
+    <label>Mobile</label>
+    <input type="number" value="" placeholder="Enter Mobile No" id="mobile" />
+    <span id="mobError"></span>
+
+    <button id="submitBtn" type="button">
+      Submit
+    </button>
+    <span id="submitError" style="
+          color: crimson;
+          margin-top: 1rem;
+          font-size: 1.3rem;
+          visibility: hidden;
+          text-align: center;
+        ">
+      All fields are mandatory.
+    </span>
+  </form>
+
+  <!-- tech gif-->
+  <div id="tech-gif">
+    <img src="./images/tech.gif" alt="technology gif" />
+  </div>
+
+  <!-- imported from file -->
+  <!-- <script src="./jquery/jquery.js" type="text/javascript"></script> -->
+
+  <!-- imported cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./example.js" type="text/javascript"></script>
+</body>
+
+</html>
